@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎来到日志查询首页</title>
+    <script>
+      function  to (){
+        var  getval = document.getElementById("cc").value;
+        window.location=("/sql/?go="+getval);
+      }
+    </script>
+</head>
+    <li style="text-align:center;">
+<body bgcolor="#FAEBD7">
+<form enctype="multipart/form-data" action="/uploadFile1/" method="post">{% csrf_token %}
+<input type="file" name="myfile" />
+
+   <input type="submit" value="测试安装包上传"/>
+</form>
+<br>
+<form action="/autofront/" method="get">
+    <br>
+    <input type="submit" value="发布更新包">
+</body>
+    </li>
+</html>

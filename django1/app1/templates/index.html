@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎来到日志查询首页</title>
+    <script>
+      function  to (){
+        var  getval = document.getElementById("cc").value;
+        window.location=("/sql/?go="+getval);
+      }
+    </script>
+</head>
+    <li style="text-align:center;">
+<body bgcolor="#FAEBD7">
+<form action="/hehe" method="get">
+    <input type="submit" value="查看测试服务器日志">
+</form>
+<br>
+<form action="/12/" method="get">
+    <input type="submit" value="查看预计发布服务器日志">
+</form>
+<br>
+<form enctype="multipart/form-data" action="/uploadFile1/" method="post">{% csrf_token %}
+<input type="file" name="myfile" />
+
+   <input type="submit" value="测试安装包上传"/>
+</form>
+<br>
+<form action="/auto/" method="get">
+    <br>
+    <input type="submit" value="发布更新包">
+</form>
+测试数据库查询语句_Javascripts调用<br>
+<input type="text" id ="cc" > <input type="button"  value="提交"  onclick="to()" >
+<form action="/test/" method="get">
+    测试数据库查询语句_HTML调用<br>
+ <input type="text" name="a" style="width:1200px;">
+    <input type="submit" value="提交">
+</form>
+</body>
+    </li>
+</html>
